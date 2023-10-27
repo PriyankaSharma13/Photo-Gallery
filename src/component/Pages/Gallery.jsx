@@ -52,9 +52,9 @@ const currentPhotos = photos.slice(startIndex, endIndex);
         <section className="flex justify-center mt-6">
           {Array.from({ length: Math.ceil(photos.length / itemsPerPage) }, (_, index) => (
             <button key={index} onClick={() => handlePageChange(index + 1)} 
-            className='text-[#DD4124] cursor-pointer text-[18px] text-center font-semibold
-            h-10 w-10 shadow-[0_3px_6px_rgba(0,0,0,0.16),0_3px_6px_rgba(0,0,0,0.23)] m-[3px] pt-[7px] px-2.5 rounded-[50%]
-            hover:bg-[#dd4124] hover:text-white'>
+            className={`text-[#DD4124] cursor-pointer text-[18px] text-center font-semibold h-10 w-10 shadow-[0_3px_6px_rgba(0,0,0,0.16),0_3px_6px_rgba(0,0,0,0.23)] m-[5px] pt-[5px] px-2.5 rounded-[50%] hover:bg-[#dd4124] hover:text-white ${
+              currentPage === index + 1 ? 'bg-[#dd4124] text-white' : ''
+            }`}>
               {index + 1}
             </button>
           ))}
