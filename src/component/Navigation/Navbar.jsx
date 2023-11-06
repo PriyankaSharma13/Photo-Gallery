@@ -5,6 +5,7 @@ import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { faXmark } from "@fortawesome/free-solid-svg-icons";
 import searchIcon from "../../assets/search.png";
 import logo from "../../assets/logo.png";
+import { Link } from "react-router-dom";
 // import { setSearchValue } from "../../Gallery/GallerySlice";
 
 const Navbar = ({ onSearch }) => {
@@ -102,7 +103,7 @@ const Navbar = ({ onSearch }) => {
              <a href="food">Food Collection</a>
             </li> */}
             <li className="  mt-6 pl-[150px] text-[#999] text-[18px] font-normal hover:text-[#fff]">
-              <a href="contact">Contact</a>
+              <Link to="/contact">Contact</Link>
             </li>
           </ul>
         </div>
