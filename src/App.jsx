@@ -21,7 +21,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Gallery searchResults={searchResults} />} />
           {/* <Route path="/Food" element={<FoodCollection />} /> */}
-          <Route path="/contact" element={<Contact/>} />
+          <Route exact path="/contact" element={<Contact/>} />
         </Routes>
       </div>
     </BrowserRouter>
